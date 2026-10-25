@@ -1,0 +1,36 @@
+{
+  "source_name": "line1",
+  "steps": [
+    {
+      "name": "dewow",
+      "window_ns": 10.0
+    },
+    {
+      "name": "timezero",
+      "shift_ns": 25.400000000000002,
+      "source": "header sample position"
+    },
+    {
+      "name": "bandpass",
+      "low_mhz": 50.0,
+      "high_mhz": 400.0,
+      "order": 4
+    },
+    {
+      "name": "background_remove",
+      "strength": 0.3
+    },
+    {
+      "name": "gain",
+      "method": "agc",
+      "window_ns": 30.0,
+      "floor_fraction": 0.002
+    }
+  ],
+  "units": {
+    "time": "ns",
+    "distance": "m",
+    "amplitudes": "instrument units or processed relative amplitudes"
+  },
+  "geometry_csv": null
+}
