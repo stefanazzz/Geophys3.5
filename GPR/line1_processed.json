@@ -12,13 +12,19 @@
     },
     {
       "name": "bandpass",
-      "low_mhz": 50.0,
-      "high_mhz": 400.0,
+      "low_mhz": 30,
+      "high_mhz": 370,
       "order": 4
     },
     {
       "name": "background_remove",
       "strength": 0.3
+    },
+    {
+      "name": "gain",
+      "method": "agc",
+      "window_ns": 30.0,
+      "floor_fraction": 0.002
     },
     {
       "name": "gain",
